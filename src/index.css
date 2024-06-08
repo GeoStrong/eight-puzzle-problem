@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .puzzle {
+    grid-template-columns: repeat(3, 50px);
+  }
+}
