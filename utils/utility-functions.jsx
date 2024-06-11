@@ -18,7 +18,7 @@ export const getPossibleMoves = (state) => {
 };
 
 const swap = (state, i, j) => {
-  const newState = [...state];
-  [newState[i], newState[j]] = [newState[j], newState[i]];
-  return newState;
+  const newState = [...state]; // Create a copy of the current state
+  [newState[i], newState[j]] = [newState[j], newState[i]]; // Swap the tiles at indices i and j
+  return newState; // Return the new state
 };
